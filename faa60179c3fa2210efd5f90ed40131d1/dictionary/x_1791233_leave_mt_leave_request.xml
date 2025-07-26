@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9f8789b9c3fa2210efd5f90ed40131b3" label="Leave Request" max_length="40" name="x_1791233_leave_mt_leave_request" type="collection">
+        <element label="Comments" max_length="40" name="comments" type="string"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="WFH" value="wfh"/>
+                <element inactive_on_update="false" label="Casual Leave" value="cl"/>
+                <element inactive_on_update="false" label="Sick Leave" value="sl"/>
+                <element inactive_on_update="false" label="Earned Leave" value="el"/>
+            </choice>
+        </element>
+        <element choice="3" default="open" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="Open" value="open"/>
+                <element inactive_on_update="false" label="Submitted" value="submitted"/>
+            </choice>
+        </element>
+        <element label="Balance" max_length="40" name="balance" type="float"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Half Day" max_length="40" name="half_day" type="boolean"/>
+        <element choice="3" default="nyr" label="Approval" max_length="40" name="approval" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requested" value="requested"/>
+                <element inactive_on_update="false" label="Not Yet Requested" value="nyr"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+            </choice>
+        </element>
+        <element label="Taken" max_length="40" name="taken" type="float"/>
+        <element label="Accrued" max_length="40" name="accrued" type="float"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Duration" max_length="40" name="duration" type="float"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+    </element>
+</database>

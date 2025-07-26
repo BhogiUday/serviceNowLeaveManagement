@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7eba72f5c3322210efd5f90ed4013163" label="Leave Calculator" max_length="40" name="x_1791233_leave_mt_leave_calculator" type="collection">
+        <element label="End Date" max_length="40" name="end_date" type="string"/>
+        <element label="Leaves" max_length="40" name="leaves" type="float"/>
+        <element choice="3" choice_field="leave_type" choice_table="x_1791233_leave_mt_leave_request" default="cl" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sick Leave" sequence="2" value="sl"/>
+                <element inactive_on_update="false" label="WFH" sequence="3" value="wfh"/>
+                <element inactive_on_update="false" label="Casual Leave" sequence="0" value="cl"/>
+                <element inactive_on_update="false" label="Earned Leave" sequence="1" value="el"/>
+            </choice>
+        </element>
+        <element label="Starting Month" max_length="40" name="starting_month" type="string"/>
+        <element label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element choice="1" default="y" label="Leave Assignment" max_length="40" name="leave_assignment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yearly" value="y"/>
+                <element inactive_on_update="false" label="Monthly" value="m"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

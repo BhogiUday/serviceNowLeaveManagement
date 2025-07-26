@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="9badb2f9c3322210efd5f90ed4013108" sys_domain="global" table="x_1791233_leave_mt_leave_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-18 14:00:45</sys_created_on>
+            <sys_id>e7adb2f9c3322210efd5f90ed4013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1791233_leave_mt_leave_request" sys_domain="global" view="Default view">9badb2f9c3322210efd5f90ed4013108</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-18 14:00:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_1791233_leave_mt_leave_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-18 14:00:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9badb2f9c3322210efd5f90ed4013108</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1791233_leave_mt_leave_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Leave Management" source="x_1791233_leave_mt">faa60179c3fa2210efd5f90ed40131d1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</sys_scope>
+            <sys_update_name>sys_ui_section_9badb2f9c3322210efd5f90ed4013108</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-18 14:00:43</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</application>
+        <file_path/>
+        <instance_id>60d8b14f3bbfce1816e44a8aa4e45adb</instance_id>
+        <instance_name>dev286797</instance_name>
+        <name>sys_ui_section_9badb2f9c3322210efd5f90ed4013108</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="9badb2f9c3322210efd5f90ed4013108" sys_domain="global" table="x_1791233_leave_mt_leave_request" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>comments</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-18 14:00:45</sys_created_on><sys_id>e7adb2f9c3322210efd5f90ed4013159</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_1791233_leave_mt_leave_request" sys_domain="global" view="Default view">9badb2f9c3322210efd5f90ed4013108</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-18 14:00:45</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_1791233_leave_mt_leave_request</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-18 14:00:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9badb2f9c3322210efd5f90ed4013108</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1791233_leave_mt_leave_request</sys_name><sys_overrides/><sys_package display_value="Leave Management" source="x_1791233_leave_mt">faa60179c3fa2210efd5f90ed40131d1</sys_package><sys_policy/><sys_scope display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</sys_scope><sys_update_name>sys_ui_section_9badb2f9c3322210efd5f90ed4013108</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-18 14:00:43</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1558430666</payload_hash>
+        <record_name>Leave Request</record_name>
+        <reverted_from/>
+        <source>7aa60179c3fa2210efd5f90ed40131d3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 14:00:45</sys_created_on>
+        <sys_id>2fadb2f9c3322210efd5f90ed4013167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1981dd65f970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 14:00:45</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>a3adb2f9603222107eaf70702184ab67</update_guid>
+        <update_guid_history>a3adb2f9603222107eaf70702184ab67:1558430666</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 14:10:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4d508da3208540d0bd081896ab5a3040</sys_id>
+        <sys_metadata>9badb2f9c3322210efd5f90ed4013108</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Leave Management" source="x_1791233_leave_mt">faa60179c3fa2210efd5f90ed40131d1</sys_package>
+        <sys_parent display_value="Leave Request">9f8789b9c3fa2210efd5f90ed40131b3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</sys_scope>
+        <sys_scope_delete display_value="">48bc432157694170844cd95ccafc4640</sys_scope_delete>
+        <sys_update_name>sys_ui_section_9badb2f9c3322210efd5f90ed4013108</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_9badb2f9c3322210efd5f90ed4013108">2fadb2f9c3322210efd5f90ed4013167</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 14:10:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

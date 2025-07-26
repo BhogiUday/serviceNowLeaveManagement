@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>end_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>setDuration</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') return;
+
+    var start = g_form.getValue('start_date');
+    if (!start) {
+        g_form.showFieldMsg('start_date', 'Please select a Start Date first.', 'error');
+        return;
+    }
+
+    var ga = new GlideAjax('lmsAjax');
+    ga.addParam('sysparm_name', 'getDateDiff');
+    ga.addParam('sysparm_start', start);
+    ga.addParam('sysparm_end', newValue);
+
+    ga.getXMLAnswer(function(answer) {
+        var ms = parseInt(answer, 10);
+        if (isNaN(ms)) {
+            g_form.showFieldMsg('duration', 'Could not calculate date difference.', 'error');
+            return;
+        }
+
+        var days = Math.floor(ms / (1000 * 60 * 60 * 24)) + 1; // include end day
+        g_form.setValue('duration', days.toString());
+    });
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-19 18:36:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a036451ec3be2210efd5f90ed4013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>setDuration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1791233_leave_mt">faa60179c3fa2210efd5f90ed40131d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</sys_scope>
+        <sys_update_name>sys_script_client_a036451ec3be2210efd5f90ed4013125</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-19 18:36:50</sys_updated_on>
+        <table>x_1791233_leave_mt_leave_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

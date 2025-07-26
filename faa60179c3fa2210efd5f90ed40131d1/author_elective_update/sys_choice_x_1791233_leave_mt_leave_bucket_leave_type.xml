@@ -9,7 +9,6 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_name>leave_type</sys_name>
             <sys_package display_value="Leave Management" source="x_1791233_leave_mt">faa60179c3fa2210efd5f90ed40131d1</sys_package>
-            // need to add some functionalities.
             <sys_policy/>
             <sys_scope display_value="Leave Management">faa60179c3fa2210efd5f90ed40131d1</sys_scope>
             <sys_update_name>sys_choice_x_1791233_leave_mt_leave_bucket_leave_type</sys_update_name>
